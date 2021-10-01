@@ -100,6 +100,7 @@ nav > a {
     color : white;
     text-transform: uppercase;
     transition: text-shadow 0.3s;
+    font-size: clamp(0.5rem, 3vw, 1rem)
 }
 
 nav > a:hover {
@@ -124,7 +125,6 @@ nav > a:last-child {
     nav > a {
         border: none;
         padding: 1em;
-        font-size: 3vw;
     }
     nav > a:last-child {
         border: none;
