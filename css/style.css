@@ -48,7 +48,7 @@ body {
 
 img {
     display: block;
-    width: 50%;
+    width: 75%;
     margin: auto;
 }
 
@@ -108,4 +108,30 @@ nav > a:hover {
 
 nav > a:last-child {
     border-bottom: solid 1px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+    .spacer {
+        display: none;
+    }
+    nav {
+        flex: 1;
+        flex-direction: row;
+    }
+    nav > a {
+        border: none;
+        padding: 1em;
+        font-size: 3vw;
+    }
+    nav > a:last-child {
+        border: none;
+    }
+    main {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5em;
+    }
 }
