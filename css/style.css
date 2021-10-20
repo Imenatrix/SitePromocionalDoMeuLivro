@@ -17,6 +17,12 @@ body {
     }
 }
 
+.modal-fullscreen {
+    padding : 3em;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
 ::-webkit-scrollbar {
     width: 1em;
 }
