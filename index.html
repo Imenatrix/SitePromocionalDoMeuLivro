@@ -28,6 +28,9 @@
 
     <!-- Os elementos nav e main recebem o efeito blur, dando uma aparencia de vidro, inspirada pelo padrão de design glassmorphism -->
 
+    <!-- Button trigger modal -->
+    
+
     <nav>
         <a href="index.html">A Série</a>
         <a href="protagonistas.html">Os Protagonistas</a>
@@ -52,11 +55,25 @@
 
         <br>
 
-        <h2>Livro 1</h2>
-
-        <iframe src="https://docs.google.com/document/d/1jp55CeO8r2I_cHgED6p5SWcW2aMG_fzL90r58HBSfNg/edit?usp=sharing" frameborder="0"></iframe>
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+            Leia o primeiro livro!
+        </button>
         
     </main>
+
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Livro 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://docs.google.com/document/d/1jp55CeO8r2I_cHgED6p5SWcW2aMG_fzL90r58HBSfNg/edit?usp=sharing" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
